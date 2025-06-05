@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC TIHMALL Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #222;
+        }
+
+        .header {
+
+            background: #222;
+            color: #fff;
+            padding: 7rem 0;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 1rem;
+        }
+
+        .blog-card-content h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .blog-card-content p {
+            margin: 0;
+            color: #555;
+        }
+
+        .circular-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem 0 2rem 0;
+        }
+
+        .circular-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #222;
+            margin-bottom: 1rem;
+        }
+
+        .circular-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .circular-section p {
+            max-width: 400px;
+            text-align: center;
+            color: #444;
+        }
+
+        .rent-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .rent-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .rent-card h4 {
+            margin: 0 0 0.5rem 0;
+            color: #222;
+        }
+
+        .rent-card p {
+            margin: 0;
+            color: #666;
+        }
+
+        /*footer {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto 1rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+
+        .footer-icons a:hover {
+            color: #f39c12;
+        }*/
+
+        @media (max-width: 900px) {
+
+            .blog-grid,
+            .rent-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .blog-grid,
+            .rent-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="myHeader">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="" srcset=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </header>
+    <div class="header">
+        <h1>ICC TIHMALL Blog</h1>
+        <p>Latest updates, stories, and rental opportunities</p>
+    </div>
+
+    <section class="blog-grid">
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 1">
+            <div class="blog-card-content">
+                <h3>Grand Opening Event</h3>
+                <p>Experience the excitement of our grand opening with exclusive offers, live music, and more. Join us
+                    for a memorable day!</p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 2">
+            <div class="blog-card-content">
+                <h3>New Store Launch</h3>
+                <p>Discover the latest brands and products at our newly launched stores. Shop the trendiest collections
+                    today!</p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 3">
+            <div class="blog-card-content">
+                <h3>Family Fun Day</h3>
+                <p>Bring your family for a day filled with fun activities, games, and delicious treats for everyone to
+                    enjoy.</p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 4">
+            <div class="blog-card-content">
+                <h3>Art & Culture Fest</h3>
+                <p>Immerse yourself in creativity at our art and culture festival featuring local artists and
+                    performers.</p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 5">
+            <div class="blog-card-content">
+                <h3>Food Carnival</h3>
+                <p>Taste the world at our food carnival with a variety of cuisines and culinary delights from top chefs.
+                </p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                alt="Blog 6">
+            <div class="blog-card-content">
+                <h3>Wellness Workshop</h3>
+                <p>Join our wellness workshop to learn about healthy living, fitness routines, and mindfulness
+                    practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="circular-section">
+        <div class="circular-img">
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80"
+                alt="Profile">
+        </div>
+        <p>
+            Meet our community manager, Jane Doe, who is dedicated to making your experience at ICC TIHMALL
+            unforgettable. Reach out for any assistance or to share your feedback!
+        </p>
+    </section>
+
+    <section class="rent-grid">
+        <div class="rent-card">
+            <h4>Retail Space for Rent</h4>
+            <p>Prime retail locations available for your business. Flexible lease terms and high foot traffic
+                guaranteed.</p>
+        </div>
+        <div class="rent-card">
+            <h4>Office Suites</h4>
+            <p>Modern office suites with all amenities. Perfect for startups and established businesses alike.</p>
+        </div>
+        <div class="rent-card">
+            <h4>Event Halls</h4>
+            <p>Spacious event halls for conferences, weddings, and exhibitions. Book now for special rates!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="mailto:info@icctihmall.com" target="_blank" aria-label="email"><i class="bx bxl-envelope"></i></a>  
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/icc.tihmall_enugu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/icc.tihmall_enugu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <p>&copy; 2025 Icc_Tihmall Enugu. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

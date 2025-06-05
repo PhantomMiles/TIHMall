@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - ICC TIHMALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #222;
+        }
+
+        .header {
+            background: #003366;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .services-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-box {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .service-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-desc {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .contact-section {
+            background: #e9ecef;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background: #0077cc;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: #005fa3;
+        }
+
+        footer {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0 1rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-social {
+            margin-top: 0.5rem;
+        }
+
+        .footer-social a {
+            color: #fff;
+            margin: 0 0.5rem;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+
+        .footer-social a:hover {
+            color: #00aced;
+        }
+
+        @media (max-width: 600px) {
+            .services-section {
+                padding: 0 0.5rem;
+            }
+
+            .contact-form {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="myHeader">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="" srcset=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </header>
+    <div class="header">
+        <h1>Our Services</h1>
+        <p>Discover what ICC TIHMALL can do for you</p>
+    </div>
+
+    <section class="services-section">
+        <div class="services-grid">
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="service-title">Web Development</div>
+                <div class="service-desc">Custom websites and web applications tailored to your business needs, using
+                    the latest technologies for performance and security.</div>
+            </div>
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="service-title">Mobile App Development</div>
+                <div class="service-desc">End-to-end mobile solutions for Android and iOS, delivering seamless user
+                    experiences and robust functionality.</div>
+            </div>
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                <div class="service-title">Cloud Solutions</div>
+                <div class="service-desc">Scalable cloud infrastructure and migration services to help your business
+                    grow and stay agile in a digital world.</div>
+            </div>
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="service-title">Cybersecurity</div>
+                <div class="service-desc">Comprehensive security assessments and solutions to protect your data and
+                    ensure compliance with industry standards.</div>
+            </div>
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="service-title">IT Consulting</div>
+                <div class="service-desc">Expert advice and strategic planning to optimize your IT investments and align
+                    technology with your business goals.</div>
+            </div>
+            <div class="service-box">
+                <div class="service-icon"><i class="fas fa-headset"></i></div>
+                <div class="service-title">Technical Support</div>
+                <div class="service-desc">Reliable support services to keep your systems running smoothly and minimize
+                    downtime for your business operations.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>Contact us: <a href="mailto:info@icctihmall.com" style="color:#fff;">info@icctihmall.com</a></div>
+            <div class="footer-social">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div style="font-size:0.9rem; margin-top:0.5rem;">&copy; 2024 ICC TIHMALL. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

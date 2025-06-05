@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIH Mall: Tomorrow Is Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header id="myHeader">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="" srcset=""></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+                <li><a href="#home" class="home-active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+    </header>
+
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="img/DJI_0924.JPG" alt="">
+                <div class="home-text">
+                    <span>Discover now</span>
+                    <h1>Explore the <br>International <br>Conference Center</h1>
+                    <a href="#" class="btn">See more &rarr;</a>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="img/DJI_0912.JPG" alt="">
+                <div class="home-text">
+                    <span>Discover now</span>
+                    <h1>Explore the <br>Tomorrow <br>Is Here Mall</h1>
+                    <a href="#" class="btn">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="img/DJI_0594.JPG" alt="">
+                <div class="home-text">
+                    <span>Discover now</span>
+                    <h1>Explore the <br>Beauty <br>Of The New Facility</h1>
+                    <a href="#" class="btn">Take the tour &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="places">
+        <div class="heading">
+            <h1>Find the most attractive shops to rent</h1>
+        </div>
+        <div class="shops-grid">
+            <div class="shop-box">
+                <img src="img/DJI_0595.JPG" alt="Shop 1">
+                <div class="shop-info">
+                    <h3>Shop 1</h3>
+                    <p>Spacious retail unit, ideal for fashion or electronics.</p>
+                    <p class="rent">Rent: ₦250,000/month</p>
+                    <a href="tel:+2348000000001" class="contact-btn">Contact</a>
+                </div>
+            </div>
+            <div class="shop-box">
+                <img src="img/DJI_0597.JPG" alt="Shop 2">
+                <div class="shop-info">
+                    <h3>Shop 2</h3>
+                    <p>Prime location, perfect for a café or eatery.</p>
+                    <p class="rent">Rent: ₦300,000/month</p>
+                    <a href="tel:+2348000000002" class="contact-btn">Contact</a>
+                </div>
+            </div>
+            <div class="shop-box">
+                <img src="img/DJI_0912.JPG" alt="Shop 3">
+                <div class="shop-info">
+                    <h3>Shop 3</h3>
+                    <p>Bright corner space, great for beauty or wellness.</p>
+                    <p class="rent">Rent: ₦220,000/month</p>
+                    <a href="tel:+2348000000003" class="contact-btn">Contact</a>
+                </div>
+            </div>
+            <div class="shop-box">
+                <img src="img/DJI_0914.JPG" alt="Shop 4">
+                <div class="shop-info">
+                    <h3>Shop 4</h3>
+                    <p>High-traffic area, suitable for tech or accessories.</p>
+                    <p class="rent">Rent: ₦270,000/month</p>
+                    <a href="tel:+2348000000004" class="contact-btn">Contact</a>
+                </div>
+            </div>
+            <div class="shop-box">
+                <img src="img/DJI_0916.JPG" alt="Shop 5">
+                <div class="shop-info">
+                    <h3>Shop 5</h3>
+                    <p>Flexible space, ideal for pop-up or seasonal shops.</p>
+                    <p class="rent">Rent: ₦200,000/month</p>
+                    <a href="tel:+2348000000005" class="contact-btn">Contact</a>
+                </div>
+            </div>
+            <div class="shop-box">
+                <img src="img/DJI_0918.JPG" alt="Shop 6">
+                <div class="shop-info">
+                    <h3>Shop 6</h3>
+                    <p>Modern unit, perfect for services or offices.</p>
+                    <p class="rent">Rent: ₦260,000/month</p>
+                    <a href="tel:+2348000000006" class="contact-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+        <style>
+        .shops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+            max-width: 1100px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .shop-box {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .shop-box:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .shop-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .shop-info {
+            padding: 1.1rem 1rem 0.5rem 1rem;
+            text-align: center;
+        }
+        .shop-info h3 {
+            margin: 0 0 0.4rem 0;
+            font-size: 1.2rem;
+            color: #1a2a4a;
+        }
+        .shop-info p {
+            margin: 0.2rem 0;
+            color: #444;
+            font-size: 1rem;
+        }
+        .shop-info .rent {
+            font-weight: bold;
+            color: #0a7d3b;
+            margin-bottom: 0.7rem;
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background: #1a2a4a;
+            color: #fff;
+            border-radius: 0.6rem;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover {
+            background: #0a7d3b;
+        }
+        @media (max-width: 700px) {
+            .shops-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .shop-box img {
+                height: 160px;
+            }
+        }
+        </style>
+        <div style="text-align:center; margin: 3rem 0 2rem 0;">
+            <h2 style="font-size:2.2rem; color:#1a2a4a; margin-bottom:1rem;">TIH Mall Tech Expo 2025</h2>
+            <p style="max-width:700px; margin:0 auto; color:#444; font-size:1.15rem;">
+                Join us at the TIH Mall Tech Expo 2025, where innovation meets opportunity! Experience the latest in technology, connect with industry leaders, and discover groundbreaking solutions shaping the future. Whether you're a tech enthusiast, entrepreneur, or business owner, this event is your gateway to the digital revolution.
+            </p>
+        </div>
+
+        <!-- Eight Image Slider -->
+        <div class="tech-event-slider-container" style="max-width:900px; margin:2.5rem auto;">
+            <div class="swiper tech-event-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/IMG-20250527-WA0011.jpg" alt="Tech Event 1" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0038.jpg" alt="Tech Event 2" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0041.jpg" alt="Tech Event 3" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0042.jpg" alt="Tech Event 4" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0043.jpg" alt="Tech Event 5" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0044.jpg" alt="Tech Event 6" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250508-WA0052.jpg" alt="Tech Event 7" class="tech-event-img"></div>
+                    <div class="swiper-slide"><img src="img/IMG-20250527-WA0008.jpg" alt="Tech Event 8" class="tech-event-img"></div>
+                </div>
+                <div class="swiper-pagination tech-event-pagination"></div>
+                <div class="swiper-button-next tech-event-next"></div>
+                <div class="swiper-button-prev tech-event-prev"></div>
+            </div>
+        </div>
+        <style>
+        .tech-event-slider-container {
+            background: #f8fafd;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2rem 1rem 2.5rem 1rem;
+        }
+        .tech-event-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+        }
+        @media (max-width: 700px) {
+            .tech-event-img {
+                height: 180px;
+            }
+            .tech-event-slider-container {
+                padding: 1rem 0.2rem 1.5rem 0.2rem;
+            }
+        }
+        </style>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Swiper('.tech-event-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                pagination: {
+                    el: '.tech-event-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.tech-event-next',
+                    prevEl: '.tech-event-prev',
+                },
+                breakpoints: {
+                    600: { slidesPerView: 2 },
+                    900: { slidesPerView: 3 }
+                }
+            });
+        });
+        </script>
+        <div style="text-align:center; max-width:700px; margin:2rem auto 3rem auto;">
+            <p style="color:#444; font-size:1.13rem;">
+                The Tech Expo features interactive workshops, live demos, and networking sessions with top innovators. Explore AI, IoT, robotics, and more in an inspiring environment designed to spark creativity and collaboration. Don’t miss this chance to be part of the next big leap in technology at TIH Mall!
+            </p>
+        </div>
+        <div class="team-section"></div>
+            <div class="team-intro-grid">
+                <div class="team-intro-image">
+                    <img src="img/etf7.jpg" alt="Our Team" class="team-group-img">
+                </div>
+                <div class="team-intro-text">
+                    <h2>Meet Our Team</h2>
+                    <p>
+                        Our passionate and experienced team is committed to making TIH Mall a vibrant hub for business and community. From customer service to facility management, each member brings unique expertise to help you succeed. Get to know us and discover how we can help you grow!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="governor-section">
+            <div class="governor-main-box">
+                <img src="img/download.jpg" alt="Governor" class="governor-img">
+                <div class="governor-text">
+                    <h2>Meet the Governor</h2>
+                    <p>
+                        The visionary leadership of our Governor has been instrumental in transforming Enugu into a thriving hub for commerce and innovation. His commitment to sustainable development and community empowerment continues to inspire progress at TIH Mall and beyond.
+                    </p>
+                </div>
+            </div>
+            <div class="governor-sub-box">
+                <div class="sub-box-text">
+                    <h3>Governor's Vision</h3>
+                    <p>
+                        With a focus on inclusive growth, the Governor champions initiatives that foster entrepreneurship and create opportunities for all. His dedication ensures that TIH Mall remains a beacon of excellence in the region.
+                    </p>
+                </div>
+                <img src="img/governor-vision.jpg" alt="Governor Vision" class="sub-box-img">
+            </div>
+        </div>
+        <style>
+        .governor-section {
+            width: 100%;
+            max-width: 1100px;
+            margin: 3rem auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .governor-main-box {
+            display: flex;
+            align-items: center;
+            background: #f3f6fa;
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            padding: 2.5rem 2rem;
+            gap: 2.5rem;
+        }
+        .governor-img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        }
+        .governor-text {
+            flex: 1;
+        }
+        .governor-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1a2a4a;
+        }
+        .governor-text p {
+            font-size: 1.15rem;
+            color: #444;
+            line-height: 1.7;
+        }
+        .governor-sub-box {
+            display: flex;
+            align-items: center;
+            background: #eaf1f8;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            padding: 1.7rem 1.2rem;
+            gap: 2rem;
+            flex-direction: row-reverse;
+        }
+        .sub-box-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .sub-box-text {
+            flex: 1;
+        }
+        .sub-box-text h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.7rem;
+            color: #1a2a4a;
+        }
+        .sub-box-text p {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.6;
+        }
+        @media (max-width: 900px) {
+            .governor-main-box, .governor-sub-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.2rem;
+                padding: 1.2rem;
+            }
+            .governor-img, .sub-box-img {
+                width: 90vw;
+                max-width: 320px;
+                height: auto;
+            }
+        }
+        </style>
+        <style>
+        .team-section {
+            margin: 3rem 0 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .team-circle-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .team-circle-image {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 1rem;
+        }
+        .team-support-text {
+            text-align: center;
+            max-width: 320px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .team-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            background: #f8f8f8;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .team-intro-image .team-group-img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 1rem;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .team-intro-text h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.6rem;
+            color: #222;
+        }
+        .team-intro-text p {
+            margin: 0;
+            color: #555;
+            font-size: 1.08rem;
+        }
+        @media (max-width: 700px) {
+            .team-intro-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 1.2rem;
+            }
+            .team-intro-image .team-group-img {
+                margin: 0 auto 1rem auto;
+            }
+        }
+        </style>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <p>&copy; 2025 Icc_Tihmall Enugu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
