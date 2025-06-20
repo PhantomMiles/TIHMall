@@ -11,13 +11,24 @@
 <body>
     <header id="myHeader">
             <a href="index.html" class="logo"><img src="img/logo.png" alt="" srcset=""></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-menu" id="menu-icon" style="color: #fff;"></div>
 
             <ul class="navbar">
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
+            <!-- Mobile Menu Overlay -->
+    
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    
     </header>
 
     <section class="home swiper" id="home">
@@ -63,7 +74,6 @@
                 <div class="shop-info">
                     <h3>Shop 1</h3>
                     <p>Spacious retail unit, ideal for fashion or electronics.</p>
-                    <p class="rent">Rent: ₦250,000/month</p>
                     <a href="tel:+2348000000001" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -72,7 +82,6 @@
                 <div class="shop-info">
                     <h3>Shop 2</h3>
                     <p>Prime location, perfect for a café or eatery.</p>
-                    <p class="rent">Rent: ₦300,000/month</p>
                     <a href="tel:+2348000000002" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -81,7 +90,6 @@
                 <div class="shop-info">
                     <h3>Shop 3</h3>
                     <p>Bright corner space, great for beauty or wellness.</p>
-                    <p class="rent">Rent: ₦220,000/month</p>
                     <a href="tel:+2348000000003" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -90,7 +98,6 @@
                 <div class="shop-info">
                     <h3>Shop 4</h3>
                     <p>High-traffic area, suitable for tech or accessories.</p>
-                    <p class="rent">Rent: ₦270,000/month</p>
                     <a href="tel:+2348000000004" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -99,7 +106,6 @@
                 <div class="shop-info">
                     <h3>Shop 5</h3>
                     <p>Flexible space, ideal for pop-up or seasonal shops.</p>
-                    <p class="rent">Rent: ₦200,000/month</p>
                     <a href="tel:+2348000000005" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -108,7 +114,6 @@
                 <div class="shop-info">
                     <h3>Shop 6</h3>
                     <p>Modern unit, perfect for services or offices.</p>
-                    <p class="rent">Rent: ₦260,000/month</p>
                     <a href="tel:+2348000000006" class="contact-btn">Contact</a>
                 </div>
             </div>
@@ -261,7 +266,7 @@
                 The Tech Expo features interactive workshops, live demos, and networking sessions with top innovators. Explore AI, IoT, robotics, and more in an inspiring environment designed to spark creativity and collaboration. Don’t miss this chance to be part of the next big leap in technology at TIH Mall!
             </p>
         </div>
-        <div class="team-section"></div>
+        <div class="team-section">
             <div class="team-intro-grid">
                 <div class="team-intro-image">
                     <img src="img/etf7.jpg" alt="Our Team" class="team-group-img">
@@ -460,6 +465,8 @@
             <p>&copy; 2025 Icc_Tihmall Enugu. All rights reserved.</p>
         </div>
     </footer>
+
+
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

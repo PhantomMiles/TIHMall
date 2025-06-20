@@ -7,6 +7,40 @@
 //     nav.classList.toggle('hidden')
 // });
 
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navbar = document.querySelector('.navbar');
+
+    if (menuIcon && mobileMenu) {
+        menuIcon.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+        });
+    }
+
+    // Optional: Close mobile menu when a link is clicked
+    if (mobileMenu) {
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // Hide desktop navbar on mobile
+    function handleResize() {
+        if (window.innerWidth <= 700) {
+            if (navbar) navbar.style.display = 'none';
+        } else {
+            if (navbar) navbar.style.display = 'flex';
+            if (mobileMenu) mobileMenu.classList.remove('active');
+        }
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+});
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() { myFunction() };
 
