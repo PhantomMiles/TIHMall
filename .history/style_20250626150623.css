@@ -690,116 +690,71 @@ footer{
             }
         }
         
-        /* Team Section Styles */
-.team-section {
-    margin: 4rem 0 2rem 0;
-    padding: 2rem 1rem;
-    background: #f8fafc;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-}
-.team-section h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    color: #1a2a4a;
-    margin-bottom: 2rem;
-}
-.team-groups {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.team-group {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 1.5rem 1rem 2rem 1rem;
-}
-.team-group h3 {
-    text-align: center;
-    color: #0a7d3b;
-    font-size: 1.4rem;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-.team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 160px;
-    background: #f8f8f8;
-    border-radius: 0.8rem;
-    padding: 1rem 0.5rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
-    transition: transform 0.2s;
-}
-.team-member:hover {
-    transform: translateY(-6px) scale(1.04);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-}
-.team-member img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 0.7rem;
-    border: 3px solid #0a7d3b;
-}
-.team-member h4 {
-    margin: 0.3rem 0 0.1rem 0;
-    font-size: 1.08rem;
-    color: #1a2a4a;
-    font-weight: 600;
-}
-.team-member p {
-    margin: 0;
-    color: #555;
-    font-size: 0.98rem;
-    text-align: center;
-}
-
-/* Responsive Team Section */
-@media (max-width: 900px) {
-    .team-groups {
-        gap: 1.5rem;
-    }
-    .team-members {
-        gap: 1.2rem;
-    }
-    .team-member {
-        width: 130px;
-        padding: 0.7rem 0.3rem;
-    }
-    .team-member img {
-        width: 70px;
-        height: 70px;
-    }
-}
-@media (max-width: 600px) {
-    .team-section {
-        padding: 1rem 0.2rem;
-    }
-    .team-members {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-    .team-member {
-        width: 100%;
-        max-width: 220px;
-        margin: 0 auto;
-    }
-}
-
-        .tech-event-slider-container {
+        .team-section {
+            margin: 3rem 0 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .team-circle-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .team-circle-image {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 1rem;
+        }
+        .team-support-text {
+            text-align: center;
+            max-width: 320px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .team-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            background: #f8f8f8;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .team-intro-image .team-group-img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 1rem;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .team-intro-text h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.6rem;
+            color: #222;
+        }
+        .team-intro-text p {
+            margin: 0;
+            color: #555;
+            font-size: 1.08rem;
+        }
+        @media (max-width: 700px) {
+            .team-intro-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 1.2rem;
+            }
+            .team-intro-image .team-group-img {
+                margin: 0 auto 1rem auto;
+            }
+        }.tech-event-slider-container {
             background: #f8fafd;
             border-radius: 1.2rem;
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);

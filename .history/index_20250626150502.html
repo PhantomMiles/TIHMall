@@ -119,7 +119,78 @@
             </div>
         </div>
         <style>
-        
+        .shops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+            max-width: 1100px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .shop-box {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .shop-box:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .shop-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .shop-info {
+            padding: 1.1rem 1rem 0.5rem 1rem;
+            text-align: center;
+        }
+        .shop-info h3 {
+            margin: 0 0 0.4rem 0;
+            font-size: 1.2rem;
+            color: #1a2a4a;
+        }
+        .shop-info p {
+            margin: 0.2rem 0;
+            color: #444;
+            font-size: 1rem;
+        }
+        .shop-info .rent {
+            font-weight: bold;
+            color: #0a7d3b;
+            margin-bottom: 0.7rem;
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background: #1a2a4a;
+            color: #fff;
+            border-radius: 0.6rem;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover {
+            background: #0a7d3b;
+        }
+        @media (max-width: 700px) {
+            .shops-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .shop-box img {
+                height: 160px;
+            }
+        }
         </style>
         <div style="text-align:center; margin: 3rem 0 2rem 0;">
             <h2 style="font-size:2.2rem; color:#1a2a4a; margin-bottom:1rem;">TIH Mall Tech Expo 2025</h2>
@@ -175,101 +246,43 @@
                 The Tech Expo features interactive workshops, live demos, and networking sessions with top innovators. Explore AI, IoT, robotics, and more in an inspiring environment designed to spark creativity and collaboration. Don’t miss this chance to be part of the next big leap in technology at TIH Mall!
             </p>
         </div>
-    </section>
-  <!-- Team Section -->
-    <section class="team-section" id="team">
-    <h2>Meet Our Teams</h2>
-    <div class="team-groups">
-
-    <!-- Enugu Tech Fest Team -->
-    <div class="team-group">
-        <h3>Enugu Tech Fest Team</h3>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="img/team/uchechukwu_okonkwo.jpg" alt="Uchechukwu Okonkwo">
-                <h4>Uchechukwu Okonkwo</h4>
-                <p>Convener</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/ifeanyi_aniagoh.jpg" alt="Ifeanyi Aniagoh">
-                <h4>Ifeanyi Aniagoh</h4>
-                <p>Co-Convener</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/uche_ugwu.jpg" alt="Uche Ugwu">
-                <h4>Uche Ugwu</h4>
-                <p>Programs Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/ifeoma_ugwu.jpg" alt="Ifeoma Ugwu">
-                <h4>Ifeoma Ugwu</h4>
-                <p>Logistics</p>
+        <div class="team-section">
+            <div class="team-intro-grid">
+                <div class="team-intro-image">
+                    <img src="img/etf7.jpg" alt="Our Team" class="team-group-img">
+                </div>
+                <div class="team-intro-text">
+                    <h2>Meet Our Team</h2>
+                    <p>
+                        Our passionate and experienced team is committed to making TIH Mall a vibrant hub for business and community. From customer service to facility management, each member brings unique expertise to help you succeed. Get to know us and discover how we can help you grow!
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Management Team -->
-    <div class="team-group">
-        <h3>Management Team</h3>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="img/team/manager1.jpg" alt="Chinedu Eze">
-                <h4>Chinedu Eze</h4>
-                <p>General Manager</p>
+        <div class="governor-section">
+            <div class="governor-main-box">
+                <img src="img/governor.jpg" alt="Governor" class="governor-img">
+                <div class="governor-text">
+                    <h2>Meet the Governor</h2>
+                    <p>
+                        The visionary leadership of our Governor has been instrumental in transforming Enugu into a thriving hub for commerce and innovation. His commitment to sustainable development and community empowerment continues to inspire progress at TIH Mall and beyond.
+                    </p>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="img/team/manager2.jpg" alt="Ngozi Okafor">
-                <h4>Ngozi Okafor</h4>
-                <p>Operations Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/manager3.jpg" alt="Emeka Nwosu">
-                <h4>Emeka Nwosu</h4>
-                <p>Facilities Manager</p>
+            <div class="governor-sub-box">
+                <div class="sub-box-text">
+                    <h3>Governor's Vision</h3>
+                    <p>
+                        With a focus on inclusive growth, the Governor champions initiatives that foster entrepreneurship and create opportunities for all. His dedication ensures that TIH Mall remains a beacon of excellence in the region.
+                    </p>
+                </div>
+                <img src="img/governor-vision.jpg" alt="Governor Vision" class="sub-box-img">
             </div>
         </div>
-    </div>
-
-    <!-- IT Team -->
-    <div class="team-group">
-        <h3>IT Team</h3>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="img/team/josephine.jpg" alt="Josephine Elonye">
-                <h4>Josephine Elonye</h4>
-                <p>UI/UX Developer</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/socrates_ogbodo.jpg" alt="Socrates Ogbodo">
-                <h4>Socrates Ogbodo</h4>
-                <p>Front End Developer</p>
-            </div>
-        </div>
-    </div>
-
-    </div>
-    </section>
-    <div class="governor-section">
-        <div class="governor-main-box">
-            <img src="img/governor.jpg" alt="Governor" class="governor-img">
-            <div class="governor-text">
-                <h2>Meet the Governor</h2>
-                <p>
-                    The visionary leadership of our Governor has been instrumental in transforming Enugu into a thriving hub for commerce and innovation. His commitment to sustainable development and community empowerment continues to inspire progress at TIH Mall and beyond.
-                </p>
-            </div>
-        </div>
-        <div class="governor-sub-box">
-            <div class="sub-box-text">
-                <h3>Governor's Vision</h3>
-                <p>
-                    With a focus on inclusive growth, the Governor champions initiatives that foster entrepreneurship and create opportunities for all. His dedication ensures that TIH Mall remains a beacon of excellence in the region.
-                </p>
-            </div>
-            <img src="img/governor-vision.jpg" alt="Governor Vision" class="sub-box-img">
-        </div>
-    </div>
+        <style>
         
+        </style>
+    </section>
     <footer>
         <div class="footer-container">
             <div class="footer-social">
